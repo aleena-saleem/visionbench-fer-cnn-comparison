@@ -1,0 +1,13 @@
+              precision    recall  f1-score   support
+
+       Angry       0.43      0.32      0.36       491
+     Disgust       0.00      0.00      0.00        55
+        Fear       0.40      0.26      0.31       528
+       Happy       0.60      0.84      0.70       879
+         Sad       0.42      0.39      0.41       594
+    Surprise       0.71      0.60      0.65       416
+     Neutral       0.45      0.53      0.49       626
+
+    accuracy                           0.51      3589
+   macro avg       0.43      0.42      0.42      3589
+weighted avg       0.49      0.51      0.49      3589
