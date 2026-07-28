@@ -96,7 +96,7 @@ Models are evaluated using:
 | ResNet50 | Feature Extraction | 42.3% |
 | DenseNet121 | Feature Extraction | 41.5% |
 | EfficientNet-B0 | Feature Extraction | 42.3% |
-| ConvNeXt-Tiny | Feature Extraction | (Add your result) |
+| ConvNeXt-Tiny | Feature Extraction | 51.3% |
 
 ---
 
