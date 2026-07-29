@@ -25,6 +25,7 @@ FER2013
 - 35,887 grayscale facial images
 - Image size: 48×48
 - 7 emotion classes
+- Known for significant class imbalance (e.g., Disgust has far fewer samples than Happy)
 
 Classes:
 
@@ -37,7 +38,14 @@ Classes:
 - Neutral
 
 ---
-
+Methodology
+Approach: Transfer Learning via Feature Extraction (backbone frozen, only classifier head trained) for all four architectures
+Epochs: 10
+Learning Rate: 0.001
+Batch Size: 32
+Loss Function: Cross-Entropy Loss
+Evaluation Metrics: Accuracy, Precision, Recall, F1 Score (weighted & macro), Confusion Matrix, Per-Class Classification Report
+---
 ## Project Structure
 
 ```
@@ -52,7 +60,6 @@ VisionBench-FER-CNN-Comparison/
 │   ├── 05-convnext-tiny.ipynb
 │   ├── 06_Benchmark.ipynb
 │
-├── src/
 │
 ├── results/
 │   ├── plots/
@@ -60,8 +67,7 @@ VisionBench-FER-CNN-Comparison/
 │   └── reports/
 │
 ├── README.md
-├── requirements.txt
-└── LICENSE
+
 ```
 
 ---
@@ -108,21 +114,9 @@ Models are evaluated using:
 - DenseNet121 performed similarly to ResNet while using fewer trainable parameters.
 - Happy and Surprise were the easiest emotions to classify.
 - Disgust remained the most difficult class because of severe class imbalance.
-
+-Across all architectures tested, ConvNeXt delivered the best accuracy while requiring the fewest trainable parameters, indicating its pretrained representations are especially well-suited to this task even without fine-tuning the backbone.
 ---
 
-## Future Improvements
-
-- Data augmentation
-- Class-balanced loss
-- Focal Loss
-- Label smoothing
-- Mixed precision training
-- Hyperparameter optimization
-- Vision Transformers
-- Ensemble learning
-
----
 
 ## Technologies Used
 
