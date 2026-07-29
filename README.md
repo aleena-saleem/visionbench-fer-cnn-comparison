@@ -40,10 +40,15 @@ Classes:
 ---
 ## Methodology
 Approach: Transfer Learning via Feature Extraction (backbone frozen, only classifier head trained) for all four architectures
+
 Epochs: 10
+
 Learning Rate: 0.001
+
 Batch Size: 32
+
 Loss Function: Cross-Entropy Loss
+
 Evaluation Metrics: Accuracy, Precision, Recall, F1 Score, Confusion Matrix, Per-Class Classification Report
 
 ---
