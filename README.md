@@ -3,7 +3,7 @@
 
 ## Overview
 
-VisionBench is a deep learning benchmarking project that compares multiple state-of-the-art Convolutional Neural Network (CNN) architectures for Facial Emotion Recognition (FER) using Transfer Learning.
+VisionBench is a deep learning benchmarking project that compares multiple Convolutional Neural Network (CNN) architectures for Facial Emotion Recognition (FER) using Transfer Learning.
 
 The project evaluates how different pretrained CNN backbones perform on the FER2013 dataset under identical training settings.
 
